@@ -1,9 +1,10 @@
-#emulatorFooter {
-  height: 50px; width: 80%;
+#playback-controls {
+  left: 10%;
+  width: 80%;
   position: absolute;
-  bottom: 12px; left: 10%;
-  background: rgba(0, 0, 150, 0.2);
-  box-shadow: 0px 0px 12px 6px rgba(0, 0, 150, 0.2);
+  bottom: 0px;
+  background: rgba(0, 0, 30, 0.5);
+  box-shadow: 0px 0px 12px 6px rgba(0, 0, 30, 0.5);
   padding: 10px;
   border-radius: 10px;
 
@@ -12,80 +13,68 @@
   font-weight: 300;
   color: #E2EBF5;
 }
-#emulatorInput, #emulatorLog {
+#emulator-input, #emulator-log {
   display: block;
   margin: 0 auto;
   overflow: hidden;
 }
-#currentZone {
-  display: inline;
-}
-#emulatorLogLine {
-  width: 100%;
-  margin: 0 auto;
-}
-#emulatorLogTimer {
+
+#emulator-log-timer {
   width: 0%; height: 3px;
   display: block;
   background: #E2EBF5;
   box-shadow: -1px 0 3px #217AA2, 0 1px 3px #217AA2, 1px 0 3px #217AA2, 0 -1px 3px #217AA2;
   border-radius: 2.5px;
 }
-/* input, button {
-  height: 23px;
-  border: 0px solid #E2EBF5;
-  background: transparent;
-  box-shadow: 0 0 3px #E2EBF5, inset 0 0 3px #E2EBF5;
 
-  text-shadow: -1px 0 3px #217AA2, 0 1px 3px #217AA2, 1px 0 3px #217AA2, 0 -1px 3px #217AA2;
-  font-weight: 300;
-  color: #E2EBF5;
-} */
-
-@font-face{
-  font-family:'Glyphicons Halflings';
-  src:url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot);
-  src:url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
-  url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2) format('woff2'),
-  url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff) format('woff'),
-  url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf) format('truetype'),
-  url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+#fight-picker {
+  width: 450px;
+  height: 125px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px white solid;
+  padding: 2px;
+  margin-bottom: 5px;
+  -webkit-user-select: none;
 }
 
-.glyphicon{
-  display:inline-block;
-  font-family:'Glyphicons Halflings';
-  font-style:normal;
-  font-weight:400;
-  line-height:1;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+.fight-option {
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
 }
-.glyphicon-eye-open:before {
-  content: '\e105';
+
+label {
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
 }
-.glyphicon-eye-closed:before {
-  content: '\e106';
+
+label:hover {
+  background: papayawhip;
 }
-.glyphicon-play:before {
-  content: "\e072";
+
+input[name=fight] {
+  display:none;
 }
-.glyphicon-stop:before {
-  content: "\e074";
+
+input[name=fight]:checked + label {
+  background: #908608;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
-#emulatorShowHandle {
-  min-width: 30px; height: 30px;
-  margin: 0 auto;
-  padding: 5px;
+
+#elapsed-time {
+  display: inline;
+}
+
+#info-panel {
+  width: calc(100% - 490px);
+  height: 131;
   position: absolute;
-  top:0; right: 0;
-  color: rgba(255, 255, 255, 0.1);
-  font-family: Arial;
-  text-align: right;
-  transition: 0.5s;
-  font-variant: small-caps;
-  background: rgba(0, 0, 0, 0.01);
-}
-#showHandleText {
-  display: inline-block;
+  right: 0px;
+  top: 0px;
+  margin: 10px;
 }
