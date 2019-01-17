@@ -1068,7 +1068,7 @@
       alarmText: function(data) {
         if (data.lastOctetMarker == data.me) {
           return {
-            en: 'YOU Stack for Twin',
+            en: 'YOU BAIT Twin',
             fr: 'VOUS devez appâter Gémellia',
             de: 'DU stackst für Twintania',
             ja: '自分にタニアには頭割り',
@@ -1098,7 +1098,7 @@
       tts: function(data) {
         if (!data.lastOctetMarker || data.lastOctetMarker == data.me) {
           return {
-            en: 'stack for twin',
+            en: 'bait twin',
             fr: 'Se rassembler pour appâter Gémellia',
             de: 'stek für twintania',
             ja: '頭割り',

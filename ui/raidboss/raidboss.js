@@ -9,9 +9,9 @@ let Options = {
   Skin: 'default',
 
   TimelineEnabled: true,
-  AlertsEnabled: true,
-  TextAlertsEnabled: true,
-  SoundAlertsEnabled: true,
+  AlertsEnabled: false,
+  TextAlertsEnabled: false,
+  SoundAlertsEnabled: false,
   SpokenAlertsEnabled: false,
   GroupSpokenAlertsEnabled: false,
 
